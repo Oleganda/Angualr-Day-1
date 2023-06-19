@@ -1,0 +1,36 @@
+footer {
+    background-color: #f7f8fa;
+    color: black;
+    width: 100%;
+}
+
+.logo {
+    width: 30px;
+    cursor: pointer;
+}
+
+.social-networks {
+
+    height: 40px;
+    display: flex;
+    list-style-type: none;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.copyrights {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 10px 0;
+}
+
+.form-search {
+    margin: auto;
+    margin-top: 30px;
+}
+
+.btn-search:hover {
+    background-color: rgb(240, 67, 95);
+}
