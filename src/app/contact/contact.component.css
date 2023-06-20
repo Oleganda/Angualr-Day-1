@@ -1,0 +1,19 @@
+.container {
+    display: block;
+    padding: 50px 0 100px 0;
+}
+
+.contact-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0 20px 0;
+    background-color: rgb(207, 22, 22);
+    color: white;
+    font-size: 25px;
+
+}
+
+.btn-submit {
+    margin-top: 40px;
+}

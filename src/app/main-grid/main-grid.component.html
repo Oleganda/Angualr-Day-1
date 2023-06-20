@@ -2,49 +2,57 @@
 
 <div class="title">Explore China</div>
 
-<div class="main-container">
-<div class="container">
-    <div class="row row-cols-lg-4 row-cols-sm-1 row-cols-xs-1 g-5">
-        <div>
-            <div class="card" style="width: 18rem;">
-                <img src="assets/photos/photo1.jpg" class="card-img-top" height="200px" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Visit Beijing</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Book now</a>
-                </div>
-            </div>
-        </div>
-         <div>
-            <div class="card" style="width: 18rem;">
-                <img src="assets/photos/photo1.jpg" class="card-img-top" height="200px" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Visit Beijing</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Book now</a>
-                </div>
-            </div>
-        </div>
-        <div>
-            <div class="card" style="width: 18rem;">
-                <img src="assets/photos/photo2.jpg" class="card-img-top"  height="200px" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Great Wall</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Book now</a>
-                </div>
-            </div>
-        </div>
-        <div>
-            <div class="card" style="width: 18rem;">
-                <img src="assets/photos/photo3.jpg" class="card-img-top" width="100%" height="200px" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Visit Shanghai</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Book now</a>
-                </div>
-            </div>
-        </div>
+
+<div class="main-grid">
+<div *ngFor="let x of trips" >
+  <div class="col">
+        <div class="card h-100">
+      <img src="{{x.img}}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{x.destination}}</h5>
+        <p class="card-text">{{x.description}}</p>
+        <p class="card-text">{{x.duration}} nights</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary">{{x.price}}€ pro Person</small>
+      </div>
     </div>
 </div>
 </div>
+</div>
+
+
+
+<!-- form to add new trip -->
+<div>
+<div class="container"><form [formGroup]="newTrip" (ngSubmit)="onSubmit()">
+<div>
+  <div class="col-md-4">
+    <label for="first-name">Photo: </label>
+    <input id="first-name" type="text" formControlName="img" class="form-control" placeholder="Download photo" aria-label="First name">
+  </div>
+  <div class="col-md-4">
+    <label for="first-name">Trip Name: </label>
+    <input id="first-name" type="text" formControlName="destination" class="form-control" placeholder="City name" aria-label="First name">
+  </div>
+  <div class="col-md-4">
+    <label for="first-name">Trip Description: </label>
+     <input id="last-name" type="text" formControlName="duration" class="form-control" placeholder="What we will see there" aria-label="Last name">
+  </div>
+  <div class="col-md-4">
+    <label for="first-name">Trip Duration: </label>
+     <input id="last-name" type="text" formControlName="description" class="form-control" placeholder="For how long" aria-label="Last name">
+  </div>
+  <div class="col-md-4">
+    <label for="first-name">Trip Price: </label>
+     <input id="last-name" type="text" formControlName="price" class="form-control" placeholder="How much does it cost" aria-label="Last name">
+  </div>
+</div>
+<div class="col-auto">
+    <button type="submit" class="btn btn-danger btn-submit">Submit</button>
+  </div>
+</form></div>
+</div>
+
+
+  

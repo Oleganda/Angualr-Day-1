@@ -8,21 +8,25 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" routerLink="">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" routerLink="/blog">Blog</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About us</a>
+          <a class="nav-link" routerLink="/contactus">Contact us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact us</a>
-        </li>    
+          <a class="nav-link" routerLink="/newtrip">Create Trip</a>
+        </li>
+        
+        <ng-template [ngIf]="counter > 50">
+        <li class="discount-alert">You have 20% discount for you next trip!</li>   
+        </ng-template>
       </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="City in China" aria-label="Search">
-        <button class="btn btn-outline-dark" type="submit">Search</button>
+      <form class="d-flex " role="search">
+        <button (click)="countClick()" type="button" class="btn btn-danger btn-donate" >Donate 10€</button>
+        <button class="btn btn-outline-dark btn-donate-number" type="button">{{counter}}€</button>
       </form>
     </div>
   </div>

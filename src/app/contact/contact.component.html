@@ -1,0 +1,21 @@
+
+<div class="contact-title">Contact Details</div>
+<div class="container"><form [formGroup]="info" (ngSubmit)="onSubmit()">
+<div>
+  <div class="col-md-4">
+    <label for="first-name">First Name: </label>
+    <input id="first-name" type="text" formControlName="firstName" class="form-control" placeholder="First name" aria-label="First name">
+  </div>
+  <div class="col-md-4">
+    <label for="first-name">Last Name: </label>
+     <input id="last-name" type="text" formControlName="lastName" class="form-control" placeholder="Last name" aria-label="Last name">
+  </div>
+  <div class="col-md-4">
+    <label for="first-name">Your E-mail: </label>
+    <input id="email" type="text" formControlName="email" class="form-control" placeholder="E-mail" aria-label="E-mail">
+  </div>
+</div>
+<div class="col-auto">
+    <button type="submit" class="btn btn-danger btn-submit">Submit</button>
+  </div>
+</form></div>

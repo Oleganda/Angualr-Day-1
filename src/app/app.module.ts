@@ -8,6 +8,9 @@ import { HeroPhotoComponent } from './hero-photo/hero-photo.component';
 import { MainGridComponent } from './main-grid/main-grid.component';
 import { FooterComponent } from './footer/footer.component';
 import { BlogComponent } from './blog/blog.component';
+import { ContactComponent } from './contact/contact.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { NewtripComponent } from './newtrip/newtrip.component';
 
 @NgModule({
   declarations: [
@@ -16,11 +19,14 @@ import { BlogComponent } from './blog/blog.component';
     HeroPhotoComponent,
     MainGridComponent,
     FooterComponent,
-    BlogComponent
+    BlogComponent,
+    ContactComponent,
+    NewtripComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

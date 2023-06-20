@@ -1,0 +1,21 @@
+.form-make-your-trip {
+    padding: 40px;
+}
+
+.contact-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0 20px 0;
+    background-color: rgb(207, 22, 22);
+    color: white;
+    font-size: 25px;
+
+}
+
+.btn-submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}

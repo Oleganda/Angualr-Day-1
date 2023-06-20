@@ -1,12 +1,19 @@
-.title {
-    margin: 40px 0 40px 0;
-    width: 100%;
-
-    text-align: center;
-    font-size: xx-large;
+.main-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 100px;
 
 }
 
-.main-container {
-    margin-bottom: 100px;
+img {
+    height: 200px;
+}
+
+.title {
+    margin: 40px 0 40px 0;
+    width: 100%;
+    text-align: center;
+    font-size: xx-large;
 }

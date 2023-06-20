@@ -1,0 +1,46 @@
+<div class="contact-title">Only for regestred clients</div>
+<form [formGroup]="info2" (ngSubmit)="onSubmit()">
+<div class="form-make-your-trip">
+<div class="input-group mb-3">
+  <span class="input-group-text" id="basic-addon1">@</span>
+  <input type="text" formControlName="userName" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+</div>
+
+<!-- begin dropdown  -->
+<div class="mb-3">
+  <div class="input-group">
+  <input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
+  <button type="button" class="btn btn-outline-secondary">Trip</button>
+  <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><a class="dropdown-item" href="#">Beijing 1</a></li>
+    <li><a class="dropdown-item" href="#">Beijing 2</a></li>
+    <li><a class="dropdown-item" href="#">Shanghai 1</a></li>
+    <li><a class="dropdown-item" href="#">Shanghai 2</a></li>
+  </ul>
+</div>
+</div>
+<!-- end begin dropdown  -->
+
+<div class="input-group mb-3">
+  <span class="input-group-text">$</span>
+  <input type="text" formControlName="price" class="form-control" aria-label="Amount (to the nearest dollar)">
+  <span class="input-group-text">.00</span>
+</div>
+
+<div class="input-group mb-3">
+  <input type="text" formControlName="firstName" class="form-control" placeholder="First Name" aria-label="First Name">
+  <span class="input-group-text"></span>
+  <input type="text" formControlName="lastName" class="form-control" placeholder="Last Name" aria-label="Last Name">
+</div>
+
+<div class="input-group">
+  <span class="input-group-text">Comments</span>
+  <textarea class="form-control" formControlName="comment" aria-label="With textarea"></textarea>
+</div>
+</div>
+<div class="col-auto btn-submit">
+    <button type="submit" class="btn btn-danger">Submit</button>
+  </div>
+  </form>
