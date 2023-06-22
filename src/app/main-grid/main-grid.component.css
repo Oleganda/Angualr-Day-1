@@ -4,7 +4,6 @@
     justify-content: center;
     gap: 30px;
     margin-bottom: 100px;
-
 }
 
 img {
@@ -18,9 +17,29 @@ img {
     font-size: xx-large;
 }
 
+.create-trip {
+    margin: 5%;
+
+}
+
+.contact-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0 20px 0;
+    background-color: rgb(207, 22, 22);
+    color: white;
+    font-size: 25px;
+
+}
+
+.btn-submit {
+    margin-top: 3%;
+}
+
 @media screen and (max-width: 992px) {
     .main-grid {
-        grid-template-columns: repeat(2, 400px);
+        grid-template-columns: repeat(2, 300px);
 
     }
 }
@@ -28,7 +47,7 @@ img {
 @media screen and (max-width: 700px) {
     .main-grid {
 
-        grid-template-columns: repeat(1, 500px);
+        grid-template-columns: repeat(1, 300px);
 
     }
 }

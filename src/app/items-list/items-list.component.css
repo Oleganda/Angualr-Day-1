@@ -3,7 +3,7 @@
     grid-template-columns: repeat(3, 300px);
     justify-content: center;
     gap: 30px;
-    margin: 30px 0 30px 0;
+    margin: 60px 0 30px 0;
 }
 
 img {
@@ -16,8 +16,7 @@ img {
 
 @media screen and (max-width: 992px) {
     .main-grid {
-        grid-template-columns: repeat(2, 400px);
-
+        grid-template-columns: repeat(2, 300px);
     }
 }
 
@@ -25,6 +24,6 @@ img {
     .main-grid {
 
         grid-template-columns: repeat(1, 500px);
-        margin-left: 100px;
+        margin-left: 55%;
     }
 }
