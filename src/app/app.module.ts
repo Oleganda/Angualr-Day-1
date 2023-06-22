@@ -11,6 +11,9 @@ import { BlogComponent } from './blog/blog.component';
 import { ContactComponent } from './contact/contact.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { NewtripComponent } from './newtrip/newtrip.component';
+import { ItemsListComponent } from './items-list/items-list.component';
+import { DetailsComponent } from './details/details.component';
+import { CartComponent } from './cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,10 @@ import { NewtripComponent } from './newtrip/newtrip.component';
     FooterComponent,
     BlogComponent,
     ContactComponent,
-    NewtripComponent
+    NewtripComponent,
+    ItemsListComponent,
+    DetailsComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,

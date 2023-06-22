@@ -1,0 +1,45 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+        <a class="navbar-brand" href="#">Explore China</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/shop">Online Shop</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" routerLink="/cart">My Cart</a>
+        </li>
+      </ul> 
+      <form class="d-flex " role="search">
+        <button routerLink="/cart" type="button" class="btn btn-danger position-relative">
+  Checkout
+  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+    {{number}}
+    <span class="visually-hidden">unread messages</span>
+  </span>
+</button>
+      </form>
+    </div>
+  </div>
+  </nav>
+
+<div class="card">
+<div class="details-card">
+<div class="card mb-1" *ngIf="obj">
+  <img src="{{obj.img}}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{obj.name}}</h5>
+    <p class="card-text">{{obj.longDescription}}</p>
+    <button (click)="addToCart()" class="btn btn-danger">Add to cart</button>
+    <hr>
+    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+  </div>
+</div>
+</div>
+</div>

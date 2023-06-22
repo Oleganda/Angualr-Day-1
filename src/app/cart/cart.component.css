@@ -1,0 +1,20 @@
+.contact-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0 20px 0;
+    background-color: rgb(207, 22, 22);
+    color: white;
+    font-size: 25px;
+
+}
+
+.main-grid {
+    margin: 5px;
+}
+
+.items-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

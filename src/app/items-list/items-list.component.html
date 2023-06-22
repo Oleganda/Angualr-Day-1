@@ -1,0 +1,44 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+        <a class="navbar-brand" href="#">Explore China</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="">Home</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" routerLink="/cart">My Cart</a>
+        </li>
+      </ul> 
+      <form class="d-flex " role="search">
+        <button routerLink="/cart" type="button" class="btn btn-danger position-relative">
+  Checkout
+  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+    {{number}}
+    <span class="visually-hidden">unread messages</span>
+  </span>
+</button>
+      </form>
+    </div>
+  </div>
+  </nav>
+
+
+  <!-- items list -->
+  <div class="main-grid">
+  <div *ngFor = "let item of items; index as x" >
+    <div class="card" style="width: 18rem;">
+  <img src="{{item.img}}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{item.name}}</h5>
+    <p class="card-text">{{item.shortDescription}}</p>
+    <p class="card-text">{{item.price}}€</p>
+    <a href="#" class="btn btn-danger">Add to cart</a>
+    <a routerLink="/shop/{{x}}" class="btn btn-danger btn-details">Details</a>
+  </div>
+</div>
+</div>
+</div>

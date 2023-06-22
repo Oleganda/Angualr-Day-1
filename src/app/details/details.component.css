@@ -1,0 +1,9 @@
+.card {
+    display: flex;
+    align-items: center;
+}
+
+.details-card {
+    margin: 30px;
+    width: 700px;
+}
