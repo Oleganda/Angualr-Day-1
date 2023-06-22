@@ -83,6 +83,23 @@ html {
 
 }
 
+.blog2 {
+    width: 60%;
+    background-color: rgba(0, 0, 0, 0.269);
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    height: auto;
+    position: absolute;
+
+}
+
+.time {
+    font-size: 120px;
+    color: rgba(255, 255, 255, 0.483);
+
+}
+
 .text {
     height: 100px;
     background-color: rgba(157, 154, 154, 0.541);
@@ -126,4 +143,21 @@ html {
     text-align: center;
     width: 70%;
     align-items: center;
+}
+
+
+@media screen and (max-width: 992px) {
+    .time {
+        font-size: 50px;
+        color: rgba(255, 255, 255, 0.483);
+
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .time {
+        font-size: 40px;
+        color: rgb(255, 255, 255);
+    }
+
 }
